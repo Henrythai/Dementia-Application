@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--Use for text hint of textInputLayout -->
+    <style name="hint_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#2196F3</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--Use for text hint of textInputLayout for register activity.Does not show hint-->
+    <style name="hint_appearance_register" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#2196F3</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <!--AppTheme Dialog which is inheritance those from above-->
+    <style name="AppTheme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:minWidth">300dp</item>
+        <item name="android:windowBackground">@drawable/custom_detail_activity_background</item>
+    </style>
+
+</resources>

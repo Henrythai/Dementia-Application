@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.trung.projectdemotwo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_icon_image"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_image1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.Launch_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.Condition_Activity"
+            android:theme="@style/AppTheme.Dialog"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".activities.MissionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.RecordAudioActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".activities.UpdateTaskActivity"
+            android:parentActivityName=".activities.DisplayTaskActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DisplayTaskActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ArchiveTaskActivity"
+            android:parentActivityName=".activities.DashboardActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DisplayTaskActivity"
+            android:parentActivityName=".activities.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:parentActivityName=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CategoryActivity"
+            android:parentActivityName=".activities.DashboardActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:parentActivityName=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:parentActivityName=".activities.ForgotPasswordActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ForgotPasswordActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddTaskActivity"
+            android:parentActivityName=".activities.CategoryActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.CategoryActivity" />
+        </activity>
+
+
+        <receiver android:name=".AlarmService.AlarmReceiver" />
+        <receiver android:name=".AlarmService.SetAlarmSnoozeReceiver" />
+        <receiver android:name=".AlarmService.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".AlarmService.AlarmService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

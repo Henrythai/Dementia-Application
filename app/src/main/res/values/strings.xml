@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Dementia\'s Reminder</string>
+    <string name="spinner_prompt">Select Task</string>
+    <string name="spinner_prompt_education">Select Education</string>
+    <string name="spinner_prompt_category">Select Category</string>
+    <string name="register_note">Are you diagnosed with dementia or any other memory loss condition?</string>
+
+    <string name="hintname">Name</string>
+    <string name="hintemail">Email</string>
+    <string name="hintpassword">Password</string>
+    <string name="hintNewpassword">New Password</string>
+    <string name="hintCpassword">Confirm Password</string>
+    <string name="textlogin">Login</string>
+    <string name="textregister">Register</string>
+
+    <string name="texterrorname">Enter Full Name</string>
+    <string name="texterroremail">Enter valid email</string>
+    <string name="texterrorpassword">Enter Password</string>
+    <string name="texterrorage">Enter Age</string>
+
+    <string name="successmessage">Registration Successfully! Now,You can Login</string>
+    <string name="successmessage_update">Updated Successfully</string>
+
+    <string name="textnotmember">No Account yet? Create one</string>
+    <string name="textalreadymember">Already member? Login</string>
+    <string name="erroremailexist">Email Already Exist</string>
+    <string name="errorpasswordmatch">Password does not matches</string>
+    <string name="erroralidemailpassword">Wrong Email or Password</string>
+
+    <string name="no_exist_email">Email is not Exist</string>
+    <string name="suddenlyError">Some thing Happens! Please check Again!</string>
+
+    <string name="text_confirm">Confirm</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_reset">Reset</string>
+    <string name="updatesuccess">Update Password Successfully</string>
+    <string name="confirm_register">I agree that my registration information are collected, stored, and analyzed anonymously for research purposes</string>
+
+    <string name="imgprofileedit">Edit</string>
+    <string name="termandCondition">Translations of words in this app are based on the understanding that the translation is based carefully on the original English language version published by its prospective authors.  The quality of the translation lies with the translator.  However, as a way of checking the quality native speakers undertook back-translation.  Users that use a translated version of this application and discover errors are encouraged to contact us at trungthaithanh170496@gmail.com</string>
+    <string name="disclaimer">This app is for non-commercial use and is intended for research purposes into improving the quality of life for patients with dementia. By using this application, you acknowledge that your anonymised data may be included in the research study.</string>
+</resources>
