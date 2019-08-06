@@ -1,4 +1,4 @@
-# Dementia-Application
+# DDoMate-Application
 This is a application for research Dementia's people 
 
 DDoMate is a free non-commercial mobile application based on recent research in design specifications for patients with mild dementia in order to enhance their daily routine. We intend to provide mild patients and their caregivers with an intuitive mobile platform to set up tasks and reminders so you may have a better quality of life.
