@@ -60,7 +60,7 @@ public class AddTaskActivity extends AppCompatActivity implements DatePickerDial
     private Spinner spnTask;
     private Custom_spinner_Task myAdapter;
     private ArrayList<ModelTask> modelTasks;
-
+//this is login
 
     private int cat_id;
 
@@ -130,7 +130,7 @@ public class AddTaskActivity extends AppCompatActivity implements DatePickerDial
         loadData();
         rdDaily.setChecked(true);
 
-        Helpers.setupUI(layout_parent,activity);
+        Helpers.setupUI(layout_parent, activity);
     }
 
 
@@ -397,7 +397,7 @@ public class AddTaskActivity extends AppCompatActivity implements DatePickerDial
         Intent DashBoardIntent = new Intent(this, DashboardActivity.class);
         DashBoardIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(DashBoardIntent);
-        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
 
@@ -681,7 +681,7 @@ public class AddTaskActivity extends AppCompatActivity implements DatePickerDial
                         isAdded = true;
 
                     } catch (NullPointerException ex) {
-                        Log.e("No Tag error",ex.getMessage());
+                        Log.e("No Tag error", ex.getMessage());
                     }
 
                 }
